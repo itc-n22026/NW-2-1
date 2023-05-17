@@ -151,6 +151,38 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 
 </header>
 
+	<main class="wp-block-group is-layout-flow" style="margin-top:var(--wp--preset--spacing--50)">
+	
+	<div class="wp-block-group has-global-padding is-layout-constrained">
+		
+		<h1 style="margin-bottom:var(--wp--preset--spacing--40);" class="wp-block-post-title">pukiwikiのインストール</h1>
+	</div>
+	
+
+	<div class="entry-content wp-block-post-content has-global-padding is-layout-constrained">
+<pre class="wp-block-code"><code>0.仮想環境の~/に移動する。
+
+1.pukiwikiをインストール
+wget https://ja.osdn.net/projects/pukiwiki/downloads/77082/pukiwiki-1.5.4_utf8.zip
+
+2.ZIPファイルの解凍
+unzip pukiwiki-1.5.4_utf8.zip
+
+3.ディレクトリ名の変更
+mv pukiwiki-1.5.4_utf8 pukiwiki
+
+4.ファイルの移動
+sudo mv pukiwiki /var/www/html/
+
+5.確認
+/var/www/html階層に”pukiwiki”ディレクトリが移動しているか確認する。
+
+6.起動
+http:&#47;&#47;localhost:8080/pukiwiki/にアクセスする。つながったら完了。
+
+</code></pre>
+</div>
+
 
 <main class="wp-block-group is-layout-flow" style="margin-top:var(--wp--preset--spacing--50)">
 	
